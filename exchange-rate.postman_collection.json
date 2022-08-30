@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "e999cd69-e7f7-4a2d-b10e-0bcc9d9c65f5",
+		"name": "exchange-rate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17422651"
+	},
+	"item": [
+		{
+			"name": "Get converations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/exchange-api/conversations?fromDate=2022-7-28&toDate=2022-12-28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange-api",
+						"conversations"
+					],
+					"query": [
+						{
+							"key": "transactionId",
+							"value": "9f326448-fb22-47d2-8f19-375c1a80938",
+							"disabled": true
+						},
+						{
+							"key": "fromDate",
+							"value": "2022-7-28"
+						},
+						{
+							"key": "toDate",
+							"value": "2022-12-28"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exchange-Convert-Api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "tr",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/exchange-api/exchange-rates?sourceCurrency=USD&targetCurrencyList=TRY,EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange-api",
+						"exchange-rates"
+					],
+					"query": [
+						{
+							"key": "sourceCurrency",
+							"value": "USD"
+						},
+						{
+							"key": "targetCurrencyList",
+							"value": "TRY,EUR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exchange-Convert-Api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "tr",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/exchange-api/convert?sourceCurrency=USD&targetCurrencyList=TRY,EUR&amount=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange-api",
+						"convert"
+					],
+					"query": [
+						{
+							"key": "sourceCurrency",
+							"value": "USD"
+						},
+						{
+							"key": "targetCurrencyList",
+							"value": "TRY,EUR"
+						},
+						{
+							"key": "amount",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
