@@ -96,7 +96,7 @@ After run the application, you can try to send a few http request the following:
 
 ###
 ---
-GET http://localhost:8060/exchange-api/convert?sourceCurrency=USD&targetCurrencyList=TRY,EUR&amount=10
+GET http://localhost:8080/exchange-api/convert?sourceCurrency=USD&targetCurrencyList=TRY,EUR&amount=10
 * []()`Content-Type: application/json`
 
 ###
