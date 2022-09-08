@@ -38,7 +38,6 @@ public class RequestContextAppFilter extends OncePerRequestFilter {
         }
         requestContextApp.setTransactionId(UUID.randomUUID().toString());
         requestContextApp.setLocale(locale);
-        requestContextApp.setTransactionId(UUID.randomUUID().toString());
         requestContextApp.setPath(request.getRequestURI());
         filterChain.doFilter(request, response);
     }
